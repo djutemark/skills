@@ -1,0 +1,3 @@
+interface:
+  display_name: "Grill Me"
+  short_description: "Get questioned a round at a time until the next step is clear"
