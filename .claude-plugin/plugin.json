@@ -1,0 +1,7 @@
+{
+  "name": "dj",
+  "description": "Agent skills.",
+  "author": { "name": "djutemark" },
+  "repository": "https://github.com/djutemark/skills",
+  "license": "MIT"
+}

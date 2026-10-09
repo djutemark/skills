@@ -1,0 +1,11 @@
+{
+  "name": "djutemark",
+  "owner": { "name": "djutemark" },
+  "plugins": [
+    {
+      "name": "dj",
+      "source": "./",
+      "description": "Agent skills."
+    }
+  ]
+}
