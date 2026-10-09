@@ -1,0 +1,7 @@
+{
+  "name": "sorcerer",
+  "description": "Agent skills for working as a sorcerer.",
+  "author": { "name": "djutemark" },
+  "repository": "https://github.com/djutemark/skills",
+  "license": "MIT"
+}
