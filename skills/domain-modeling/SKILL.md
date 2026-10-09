@@ -1,11 +1,13 @@
 ---
 name: domain-modeling
-description: Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.
+description: Harvest a project's domain model from code that has firmed up. Use when the user asks to write or edit GLOSSARY.md, record an ADR, or name things that have stabilised in the code.
 ---
 
 # Domain Modeling
 
-Actively build and sharpen the project's domain model as you design. This is the *active* discipline: challenging terms, inventing edge-case scenarios, and writing the glossary and decisions down the moment they crystallise. (Merely *reading* `GLOSSARY.md` for vocabulary is not this skill: that's a one-line habit any skill can do. This skill is for when you're changing the model, not just consuming it.)
+Draw the domain model out of what has been built. The code is the evidence; the glossary and ADRs are its written-down residue. They come after understanding, never before it.
+
+Don't run this on a blank page or while the user is still finding the shape by building. If a term or decision hasn't settled in the code yet, leave it unwritten. (Merely *reading* `GLOSSARY.md` for vocabulary is not this skill: that's a one-line habit any skill can do. This skill is for when you're changing the model, not just consuming it.)
 
 ## File structure
 
@@ -39,33 +41,33 @@ If a `GLOSSARY-MAP.md` exists at the root, the repo has multiple contexts. The m
 
 Create files lazily: only when you have something to write. If no `GLOSSARY.md` exists, create one when the first term is resolved. If no `docs/adr/` exists, create it when the first ADR is needed.
 
-## During the session
+## Harvesting
 
-### Challenge against the glossary
+### Read the code first
 
-When the user uses a term that conflicts with the existing language in `GLOSSARY.md`, call it out immediately. "Your glossary defines 'cancellation' as X, but you seem to mean Y. Which is it?"
+Before proposing a term or a decision, read the code that embodies it: type names, module boundaries, function names, tests. Propose glossary entries from what the code already says. When the code uses several words for one concept, name the split and offer a canonical term.
 
-### Sharpen fuzzy language
+### Code is the source of truth
 
-When the user uses vague or overloaded terms, propose a precise canonical term. "You're saying 'account': do you mean the Customer or the User? Those are different things."
+When what the user says and what the code does disagree, note it once and move on: "Your code cancels whole Orders, but you described partial cancellation." Don't block on it. The user may resolve it by changing the code, by changing their words, or by building more first.
 
-### Discuss concrete scenarios
+### Let terms stay provisional
 
-When domain relationships are being discussed, stress-test them with specific scenarios. Invent scenarios that probe edge cases and force the user to be precise about the boundaries between concepts.
+Fuzzy or overloaded words are normal while the shape is still forming. Don't challenge vocabulary mid-build. Only record a term once the user has settled it, or the code has.
 
-### Cross-reference with code
+### Answer boundaries by building
 
-When the user states how something works, check whether the code agrees. If you find a contradiction, surface it: "Your code cancels entire Orders, but you just said partial cancellation is possible. Which is right?"
+When the boundary between two concepts is unclear, don't interrogate the user with invented scenarios. Suggest a spike or a test that would show the answer, and let the code decide.
 
-### Update GLOSSARY.md inline
+### Update GLOSSARY.md as terms settle
 
-When a term is resolved, update `GLOSSARY.md` right there. Don't batch these up: capture them as they happen. Use the format in [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md).
+When a term is settled, update `GLOSSARY.md` right there. Don't batch these up. Use the format in [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md).
 
 `GLOSSARY.md` should be totally devoid of implementation details. Do not treat `GLOSSARY.md` as a spec, a scratch pad, or a repository for implementation decisions. It is a glossary and nothing else.
 
-### Offer ADRs sparingly
+### Offer ADRs sparingly, after the fact
 
-Only offer to create an ADR when all three are true:
+ADRs record decisions already made and built, not decisions about what to build. Only offer one when all three are true:
 
 1. **Hard to reverse**: the cost of changing your mind later is meaningful
 2. **Surprising without context**: a future reader will wonder "why did they do it this way?"
