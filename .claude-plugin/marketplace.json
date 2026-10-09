@@ -3,7 +3,7 @@
   "owner": { "name": "djutemark" },
   "plugins": [
     {
-      "name": "sorcerer",
+      "name": "dj",
       "source": "./",
       "description": "Agent skills for working as a sorcerer."
     }

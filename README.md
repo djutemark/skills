@@ -10,10 +10,10 @@ In Claude Code:
 
 ```
 /plugin marketplace add djutemark/skills
-/plugin install sorcerer@djutemark
+/plugin install dj@djutemark
 ```
 
-Skills are invoked as `/sorcerer:<skill>`, for example `/sorcerer:grill-me`.
+Skills are invoked as `/dj:<skill>`, for example `/dj:grill-me`.
 
 To enable it for everyone working in a project, add to that project's `.claude/settings.json`:
 
@@ -22,7 +22,7 @@ To enable it for everyone working in a project, add to that project's `.claude/s
   "extraKnownMarketplaces": {
     "djutemark": { "source": { "source": "github", "repo": "djutemark/skills" } }
   },
-  "enabledPlugins": { "sorcerer@djutemark": true }
+  "enabledPlugins": { "dj@djutemark": true }
 }
 ```
 
@@ -30,5 +30,5 @@ Cloud sessions on claude.ai ignore `enabledPlugins`. There, a project needs a Se
 
 ```
 claude plugin marketplace add djutemark/skills
-claude plugin install sorcerer@djutemark
+claude plugin install dj@djutemark
 ```
