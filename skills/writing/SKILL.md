@@ -3,7 +3,7 @@ name: writing
 description: Writing anything outside chat and code. Use when writing docs, READMEs, commit messages, PR descriptions, issues, code comments, skills, or AGENTS.md / CLAUDE.md.
 ---
 
-Reference for all writing outside chat and code, with code comments included. [What, not how](#what-not-how) applies to every document. The rest applies with full force to documents an agent consumes (a skill, an `AGENTS.md` / `CLAUDE.md`, a doc reached by a pointer): the packaging differs, the writing does not, and the same levers make each one predictable, since the agent takes the same _process_ every run rather than producing the same output.
+Reference for all writing outside chat and code, code comments included. [What, not how](#what-not-how) applies to every document; the rest applies with full force to documents an agent consumes (a skill, an `AGENTS.md` / `CLAUDE.md`, a doc reached by a pointer).
 
 When the document you're writing is a skill, read [`SKILL-MECHANICS.md`](SKILL-MECHANICS.md) for frontmatter, invocation choice, and router skills.
 
@@ -11,7 +11,7 @@ When the document you're writing is a skill, read [`SKILL-MECHANICS.md`](SKILL-M
 
 Write **what** was done, or what is true. The code is the record of _how_; a document that retells it is a second copy of the code, and the reader pays twice.
 
-- A **why** lives in an issue in the tracker. Every other document states what.
+- A **why** lives in an issue in the tracker, an ADR, or a reference doc where the reason changes how the reader applies a rule. Every other document states what.
 - **Comments** mark where the code fails to speak for itself. Make the code clear first; a comment earns its place only for what code cannot say (an arcane optimisation, a workaround for an upstream failure), and stays as short as that.
 
 ## Context pointers
@@ -78,7 +78,7 @@ Hunt for opportunities to refactor with leading words. A triad spelled out at th
 
 You win twice: fewer tokens, and a sharper hook for the agent to hang its thinking on. Assume every document is carrying restatements that leading words retire. Go find them.
 
-**Negation** is the failure mode beside this lever: steering by prohibition drags the forbidden behaviour into context and makes it _more_ available, not less. _Don't think of an elephant_, and the elephant is all there is; the negation is a weak modifier the strongly-activated concept overruns, so the ban half-reads as an instruction to do the thing. Prompt the **positive**: state the target behaviour ("write one-line comments") so the banned one is never spoken. A prohibition earns its place only as a hard guardrail you cannot phrase positively; even then, pair it with the positive target so attention lands on what to do.
+**Negation** is the failure mode beside this lever: steering by prohibition drags the forbidden behaviour into context and makes it _more_ available, not less. _Don't think of an elephant_, and the elephant is all there is; the negation is a weak modifier the strongly-activated concept overruns, so the ban half-reads as an instruction to do the thing. Prompt the **positive**: state the target behaviour ("state what changed") so the banned one is never spoken. A prohibition earns its place only as a hard guardrail you cannot phrase positively; even then, pair it with the positive target so attention lands on what to do.
 
 ## Pruning
 
