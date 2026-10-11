@@ -1,0 +1,3 @@
+interface:
+  display_name: "Milestone"
+  short_description: "Get questioned about where you're heading, and record it as a GitHub milestone"

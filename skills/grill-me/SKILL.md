@@ -5,7 +5,7 @@ description: Question the user, a round at a time, to sharpen their thinking abo
 
 Question the user to help them think. The goal is not a complete design; it is knowing what to build next.
 
-**Ground the questions in what exists.** If there is code, a prototype, a diff or a branch, read it first and ask about it: "`foo()` swallows X here. Intended?" If there is only an idea, ask about the idea, but stay close to what the user could try first.
+**Ground the questions in what exists.** If there is code, a prototype, a diff or a branch, read it first and ask about it: "`foo()` swallows X here. Intended?" If there is only an idea, ask about the idea, but stay close to what the user could try first. If the repo has an open GitHub milestone, read it: the next step leads toward it.
 
 **Keep the horizon short.** Only ask about decisions the next build step depends on. When a question reaches further out, or can't be answered without building something, don't push for an answer: park it as _find out by building_. "I don't know yet" is a valid answer; offer a small experiment that would answer it instead of a guess.
 
