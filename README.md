@@ -13,7 +13,7 @@ In Claude Code:
 /plugin install dj@djutemark
 ```
 
-Skills are invoked as `/dj:<skill>`, for example `/dj:grill-me`.
+Skills are invoked as `/dj:<skill>`, for example `/dj:next`.
 
 To enable it for everyone working in a project, add to that project's `.claude/settings.json`:
 

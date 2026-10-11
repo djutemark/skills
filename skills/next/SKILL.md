@@ -1,5 +1,5 @@
 ---
-name: grill-me
+name: next
 description: Question the user, a round at a time, to sharpen their thinking about what they're building and find the next step. Use when the user wants to be grilled, questioned, or to think something through out loud.
 ---
 

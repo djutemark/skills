@@ -7,7 +7,7 @@ Question the user to find out what they are building toward, then record it as a
 
 **Start from what exists.** Read the repo's open milestones (`gh api repos/{owner}/{repo}/milestones`) and the code. If a milestone is open, question it against what has been built since: is it still the destination, or has it been reached? If several are open, ask which one this is about.
 
-**Ask about the destination, never the route.** Ask what the user can run or show at the milestone that they can't now, who or what uses it, what is deliberately left out, and how they will know they are there. Questions about how to build it are parked: building answers them, or `grill-me` does. "I don't know yet" is a valid answer; that part is not in the milestone yet.
+**Ask about the destination, never the route.** Ask what the user can run or show at the milestone that they can't now, who or what uses it, what is deliberately left out, and how they will know they are there. Questions about how to build it are parked: building answers them, or `next` does. "I don't know yet" is a valid answer; that part is not in the milestone yet.
 
 Work in **rounds**. Each round, ask every question you can ask _now_ without guessing at answers you haven't heard yet. Number each question and give your recommended answer. Then wait for the user's answers before the next round.
 
