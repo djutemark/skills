@@ -11,6 +11,7 @@ The code is the source of truth. Point at files, symbols and commits rather than
 
 Describe the current state, not a plan:
 
+- **Milestone**: the open GitHub milestone this work heads toward, if any, by URL.
 - **What exists**: paths, commits, what runs.
 - **What was tried**: and what happened, including what was dropped and why.
 - **What was understood**: what the building revealed about the problem.
