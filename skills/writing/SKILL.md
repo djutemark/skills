@@ -1,7 +1,10 @@
 ---
 name: writing
 description: Writing anything outside chat and code. Use when writing docs, READMEs, commit messages, PR descriptions, issues, code comments, skills, or AGENTS.md / CLAUDE.md.
+allowed-tools: Bash(cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md)
 ---
+
+!`cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md`
 
 Reference for all writing outside chat and code, code comments included. [What, not how](#what-not-how) applies to every document; the rest applies with full force to documents an agent consumes (a skill, an `AGENTS.md` / `CLAUDE.md`, a doc reached by a pointer).
 

@@ -1,7 +1,10 @@
 ---
 name: milestone
 description: Question the user, a round at a time, about what they're building toward, and record it as a GitHub milestone. Use when the user wants to set, revisit or sharpen a milestone, or talks about where the work is heading.
+allowed-tools: Bash(cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md)
 ---
+
+!`cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md`
 
 Question the user to find out what they are building toward, then record it as a GitHub milestone. A milestone is a destination, not a plan: what exists when we get there, not how we get there.
 

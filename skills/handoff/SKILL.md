@@ -3,7 +3,10 @@ name: handoff
 description: Compact the current conversation into a handoff document for another agent to pick up.
 argument-hint: "What will the next session be used for?"
 disable-model-invocation: true
+allowed-tools: Bash(cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md)
 ---
+
+!`cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md`
 
 Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save to the temporary directory of the user's OS (`$TMPDIR`, else `/tmp`; `%TEMP%` on Windows) - not the current workspace.
 

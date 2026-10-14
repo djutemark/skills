@@ -1,7 +1,10 @@
 ---
 name: domain-modeling
 description: Harvest a project's domain model from code that has firmed up. Use when the user asks to write or edit GLOSSARY.md, record an ADR, or name things that have stabilised in the code.
+allowed-tools: Bash(cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md)
 ---
+
+!`cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md`
 
 # Domain Modeling
 
