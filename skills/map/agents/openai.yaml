@@ -1,0 +1,3 @@
+interface:
+  display_name: "Map"
+  short_description: "Draw the current architecture as a Mermaid diagram"
