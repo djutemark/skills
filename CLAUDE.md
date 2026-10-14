@@ -1,1 +1,2 @@
 @GOAL.md
+@PRINCIPLES.md

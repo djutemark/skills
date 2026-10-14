@@ -1,7 +1,10 @@
 ---
 name: harvest
 description: After a stretch of building, draw out what the code now knows (concepts, names, invariants, implicit decisions) into the smallest explicit layer worth keeping: glossary, ADRs, tests. Use when the user wants to harvest, wrap up a stretch of work or a milestone, write or edit GLOSSARY.md, or record an ADR.
+allowed-tools: Bash(cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md)
 ---
+
+!`cat ${CLAUDE_PLUGIN_ROOT}/PRINCIPLES.md`
 
 # Harvest
 
